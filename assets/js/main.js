@@ -226,4 +226,60 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  document.addEventListener("DOMContentLoaded", function () {
+    let certificateLink = document.getElementById("certificateLink");
+    let modal = document.getElementById("certificateModal");
+    let closeModalButton = document.getElementById("closeModal");
+
+    // Ensure modal is hidden on page load
+    modal.style.display = "none";
+
+    // Open modal when clicking the certificate link
+    certificateLink.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevents jumping to the top
+        modal.style.display = "flex";
+    });
+
+    // Close modal when clicking the close button
+    closeModalButton.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    // Close modal when clicking outside the image
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+document.getElementById("downloadResume").addEventListener("click", function () {
+  let { jsPDF } = window.jspdf;
+  let doc = new jsPDF();
+
+  // Get resume section
+  let resumeContent = document.getElementById("resume");
+
+  // Add content to the PDF
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(18);
+  doc.text("Resume - Suriya", 20, 20); // Title
+
+  doc.setFontSize(12);
+  doc.setFont("helvetica", "normal");
+
+  let content = resumeContent.innerText; // Extract text from resume section
+  let pageWidth = doc.internal.pageSize.getWidth() - 40; // Keep margins
+  doc.text(content, 20, 30, { maxWidth: pageWidth });
+
+  // Add portfolio link
+  doc.setTextColor(0, 0, 255);
+  doc.textWithLink("Visit My Portfolio", 20, doc.internal.pageSize.getHeight() - 20, { url: "https://yourportfolio.com" });
+
+  // Save the PDF
+  doc.save("Suriya_Resume.pdf");
+});
+
+
+
 })();
