@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - iPortfolio Bootstrap Template</title>
+  <title>Suriya's Portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -65,23 +65,7 @@
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
         <!--<li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li> -->
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
+        
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
@@ -125,20 +109,21 @@
               <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 15px;">
                   
                   <!-- Personal Details -->
-                  <div style="flex: 1 1 320px; background: #f4f4f4; padding: 20px; border-radius: 8px; text-align: center;">
-                      <h3 style="color: #3498db;">📞 Contact</h3>
-                      <p><strong>Mobile:</strong> +91 73393 10945 <br>
-                      <strong>Email:</strong> suriyagurumoorthi02@gmail.com</p>
-                  </div>
           
                   <div style="flex: 1 1 320px; background: #f4f4f4; padding: 20px; border-radius: 8px; text-align: center;">
                       <h3 style="color: #e67e22;">🎓 Education</h3>
                       <p>Master’s in Computational Statistics & Data Analytics</p>
                   </div>
+
+                  <div style="flex: 1 1 320px; background: #f4f4f4; padding: 20px; border-radius: 8px; text-align: center;">
+                    <h3 style="color: #3498db;">📞 Contact</h3>
+                    <p><strong>Mobile:</strong> +91 73393 10945 <br>
+                    <strong>Email:</strong> suriyagurumoorthi02@gmail.com</p>
+                </div>
           
                   <div style="flex: 1 1 320px; background: #f4f4f4; padding: 20px; border-radius: 8px; text-align: center;">
-                      <h3 style="color: #27ae60;">🌍 Languages</h3>
-                      <p>English, Tamil</p>
+                      <h3 style="color: #27ae60;"> 🖥️Tools</h3>
+                      <p>Python, SQL, Tableau, Streamlit  </p>
                   </div>
           
                   <div style="flex: 1 1 320px; background: #f4f4f4; padding: 20px; border-radius: 8px; text-align: center;">
@@ -357,11 +342,16 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <button id="downloadResume" class="download-btn">Download Resume</button>
-
-        <p><b>Driven by curiosity, fueled by data, and committed to continuous learning and innovation.</b></p>
-      </div><!-- End Section Title -->
+        <div class="resume-header">
+            <h2>Resume</h2>
+            <a href="assets/RESUME_SURIYAG.pdf" download="Suriya_Resume.pdf">
+                <button class="download-btn">Download Resume</button>
+            </a>
+        </div>
+        
+    </div>
+    
+    <!-- End Section Title -->
 
       <div class="container">
 
@@ -472,7 +462,7 @@
                   <h4>Project 1</h4>
                   <p>Trip Itinerary Generator</p>
                   <a href="assets/img/portfolio/project-1.png" title="Project 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="project-1.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -685,14 +675,14 @@
 
     </section>/Services Section -->
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials Section 
     <section id="testimonials" class="testimonials section light-background">
 
-      <!-- Section Title -->
+       Section Title 
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div> End Section Title
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -735,7 +725,7 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item 
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -748,7 +738,7 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div> End testimonial item 
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -761,7 +751,7 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -774,7 +764,7 @@
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div> End testimonial item 
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -787,7 +777,7 @@
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item 
 
           </div>
           <div class="swiper-pagination"></div>
@@ -795,7 +785,7 @@
 
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </section> /Testimonials Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
