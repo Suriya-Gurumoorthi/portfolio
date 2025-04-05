@@ -52,7 +52,7 @@
     .portfolio-header {
       text-align: center;
       padding: 30px;
-      background: #6a11cb;
+      background: #149ddd;
       color: #fff;
       position: relative;
     }
@@ -127,7 +127,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 500;
-  background: rgba(106, 17, 203, 0.7); /* Semi-transparent purple background */
+  background: #149ddd; /* Semi-transparent purple background */
   padding: 8px 16px;
   border-radius: 8px;
   opacity: 0; /* Hidden by default */
@@ -142,7 +142,7 @@
   opacity: 1; /* Show text on hover */
 }
     .swiper-pagination-bullet-active {
-      background: #6a11cb;
+      background: #149ddd;
     }
     .portfolio-info {
       flex: 1;
@@ -153,7 +153,7 @@
     }
     .portfolio-info h3 {
       font-size: 22px;
-      color: #6a11cb;
+      color: #149ddd;
       margin-bottom: 15px;
       font-family: 'Poppins', sans-serif;
     }
@@ -166,7 +166,7 @@
       font-size: 16px;
     }
     .portfolio-info a {
-      color: #6a11cb;
+      color: #149ddd;
       text-decoration: none;
       font-weight: 500;
     }
@@ -185,7 +185,7 @@
 
 .portfolio-description h2 {
   font-size: 24px;
-  color: #6a11cb; /* Vibrant color to match theme */
+  color: #149ddd; /* Vibrant color to match theme */
   margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -202,7 +202,7 @@
   left: 0;
   width: 50%;
   height: 3px;
-  background: #6a11cb;
+  background: #149ddd;
   border-radius: 2px;
   transition: width 0.3s ease;
 }
@@ -231,7 +231,7 @@
 .portfolio-description > ul > li::before {
   content: '\f00c'; /* Checkmark icon from Bootstrap Icons */
   font-family: 'Bootstrap-icons'; /* Adjust if using a different icon set */
-  color: #6a11cb;
+  color: #149ddd;
   position: absolute;
   left: 0;
   top: 2px;
@@ -240,7 +240,7 @@
 
 .portfolio-description .highlight {
   font-weight: 600;
-  color: #6a11cb;
+  color: #149ddd;
   background: rgba(106, 17, 203, 0.1); /* Light background highlight */
   padding: 2px 8px;
   border-radius: 5px;
@@ -258,7 +258,7 @@
   color: #333;
   margin: 10px 0 10px -25px; /* Offset to align with parent li */
   font-family: 'Poppins', sans-serif;
-  border-left: 4px solid #6a11cb;
+  border-left: 4px solid #149ddd;
   padding-left: 10px;
 }
 
@@ -279,7 +279,7 @@
 .portfolio-description ul ul li::before {
   content: '\f00c'; /* Checkmark icon */
   font-family: 'Bootstrap-icons';
-  color: #6a11cb;
+  color: #149ddd;
   position: absolute;
   left: 0;
   top: 2px;
@@ -293,7 +293,7 @@
 }
 
 .portfolio-description .feature-bold:hover {
-  color: #6a11cb; /* Changes color on hover */
+  color: #149ddd; /* Changes color on hover */
 }
   </style>
 </head>
@@ -320,11 +320,11 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -336,6 +336,14 @@
       </div>
       <div class="portfolio-content">
         <div class="top-section">
+          <div class="portfolio-info">
+            <h3>Project Information</h3>
+            <ul>
+              <li><strong>Tools Used:</strong> Python, Google Gemini, Streamlit</li>
+              <li><strong>Source Code:</strong> <a href="https://github.com/Suriya-Gurumoorthi/trip-advisor-llm" target="_blank" rel="noopener noreferrer">Github</a></li>
+              <li><strong>Project Demo:</strong> <a href="https://trip-advisor-llm-by-suriyag.streamlit.app/" target="_blank" rel="noopener noreferrer">Streamlit</a></li>
+            </ul>
+          </div>
           <div class="portfolio-slider">
             <div class="swiper">
               <div class="swiper-wrapper">
@@ -349,15 +357,6 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
-          <div class="portfolio-info">
-            <h3>Project Information</h3>
-            <ul>
-              <li><strong>Skills:</strong> Gained Proficiency in <b>Prompt Engineering and API key usage.</b></li>
-              <li><strong>Tools Used:</strong> Python, Google Gemini, Streamlit</li>
-              <li><strong>Source Code:</strong> <a href="https://github.com/Suriya-Gurumoorthi/trip-advisor-llm" target="_blank" rel="noopener noreferrer">Github</a></li>
-              <li><strong>Project Demo:</strong> <a href="https://trip-advisor-llm-by-suriyag.streamlit.app/" target="_blank" rel="noopener noreferrer">Streamlit</a></li>
-            </ul>
-          </div>
         </div>
         <div class="portfolio-description">
           <h2>About the Project</h2>
@@ -366,9 +365,9 @@
             <li>This tool takes user inputs—such as starting location, destination, preferred mode of transportation, budget, food preferences, and trip duration—and crafts a detailed, day-by-day itinerary tailored to their needs.</li>
             <li><span class="key-features">Key Features:</span>
               <ul>
-                <li>🔺Provides <span class="highlight">weather predictions</span> for the travel dates, helping users pack and plan activities with confidence.</li>
-                <li>🔺Delivers <span class="highlight">approximate flight ticket prices</span>, enabling budget-conscious travelers to make informed decisions.</li>
-                <li>🔺Offers <span class="highlight">currency exchange rate approximations</span>, simplifying financial planning across borders.</li>
+                <li>🔵 Provides <span class="highlight">weather predictions</span> for the travel dates, helping users pack and plan activities with confidence.</li>
+                <li>🔵 Delivers <span class="highlight">approximate flight ticket prices</span>, enabling budget-conscious travelers to make informed decisions.</li>
+                <li>🔵 Offers <span class="highlight">currency exchange rate approximations</span>, simplifying financial planning across borders.</li>
               </ul>
             </li>
             <li>This project showcases my ability to blend API integration, data processing, and user-centric design to solve real-world problems—perfect for anyone dreaming of their next adventure!</li>
