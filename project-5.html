@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>British Airways Booking Prediction</title>
+  <title>Customer Lifetime Value Prediction</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -332,23 +332,23 @@
   <main class="main">
     <div class="portfolio-container">
       <div class="portfolio-header">
-        <h1>British Airways Booking Prediction</h1>
+        <h1>Customer Lifetime Value Prediction</h1>
       </div>
       <div class="portfolio-content">
         <div class="top-section">
           <div class="portfolio-info">
             <h3>Project Information</h3>
             <ul>
-              <li><strong>Tools Used:</strong> Python, Scikit learn</li>
-              <li><strong>Source Code:</strong> <a href="https://github.com/Suriya-Gurumoorthi/BritishAirways/" target="_blank" rel="noopener noreferrer">Github</a></li>
+              <li><strong>Tools Used:</strong> Python, SQL</li>
+              <li><strong>Source Code:</strong> <a href="https://github.com/Suriya-Gurumoorthi/CustomerLifeTimeValuePrediction/" target="_blank" rel="noopener noreferrer">Github</a></li>
             </ul>
           </div>
           <div class="portfolio-slider">
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="https://github.com/Suriya-Gurumoorthi/BritishAirways/" target="_blank" rel="noopener noreferrer" class="image-link">
-                    <img src="assets/img/portfolio/project-3.JPG" alt="Slide 1">
+                  <a href="https://github.com/Suriya-Gurumoorthi/CustomerLifeTimeValuePrediction/" target="_blank" rel="noopener noreferrer" class="image-link">
+                    <img src="assets/img/portfolio/Project-5.png" alt="Slide 1">
                     <span class="demo-text">Click for Source Code</span>
                   </a>
                 </div>
@@ -360,10 +360,43 @@
         <div class="portfolio-description">
           <h2>About the Project</h2>
           <ul>
-            <li>This project focuses on <span class="highlight">predicting whether a customer will book a flight ticket</span> based on historical booking patterns and contextual variables. Using booking data from British Airways, the model analyzes a wide range of factors such as  <span class="highlight">trip duration, number of passengers, flight day, booking source, meal preferences,</span> and other behavioral variables to forecast booking decisions. 
-            <li>The dataset was initially messy, with significant amounts of missing values, inconsistencies, and outliers. A major portion (around <span class="highlight">60% of the total time</span>) was dedicated to <span class="highlight">data cleaning, imputation, and outlier handling</span> — turning the raw data into a structured, model-ready format.</li>
-            <li>After preprocessing, multiple machine learning models were trained and optimized using hyperparameter tuning techniques to adapt them specifically to the problem space and got Random Forest as the lead performing model with <span class="highlight">85% Precision Score.</span> </li>
-            <li>This project showcases my ability to handle <span class="highlight"> effective data cleaning, GridSearchCV vs RandomSearchCV and proper feature engineering</span> to prevent the model from overfitting.</li>
+            <li>The main objective of this project is to <span class="highlight">predict future purchase behavior</span> and Customer Lifetime Value (CLTV) using historical transaction data. This project combines <span class="highlight">RFM (Recency, Frequency, Monetary)</span> analysis with advanced probabilistic models to guide business decisions in customer segmentation, targeting, and retention.</li> 
+            <li>Using <span class="highlight">RFM segmentation</span>, businesses can quickly identify loyal, high-value customers versus those at risk of churn — enabling focused marketing efforts and reducing customer acquisition costs</li>
+            <li>Through model comparison and performance metrics, decision-makers can select the best strategy for their data. Visuals like <span class="highlight">Frequency-Recency matrices</span> and <span class="highlight">purchase predictions</span> make it easy for even non-technical teams to understand customer behavior trends.</li>
+            <li>As we can see here is that there is no much difference when it comes to the performance of these models but <span class="highlight">Pareto NBD model</span> is slightly performing better when it comes it <span class="highlight">minimizing the MSE & RMSE Errors.</span></li>
+            <table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+              <thead style="background-color: #f2f2f2;">
+                <tr>
+                  <th>Model</th>
+                  <th>MSE Purchase Error</th>
+                  <th>RMSE Purchase Error</th>
+                  <th>Average Purchase Error</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>BG-NBD</td>
+                  <td>4.051991</td>
+                  <td>2.012956</td>
+                  <td>0.409305</td>
+                </tr>
+                <tr>
+                  <td><b>Pareto-NBD</td>
+                  <td><b>4.039627</b></td>
+                  <td><b>2.009882</b></td>
+                  <td><b>0.409597</b></td>
+                </tr>
+                <tr>
+                  <td>MBG-NBD</td>
+                  <td>4.051991</td>
+                  <td>2.012956</td>
+                  <td>0.409305</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            
+            <li>This project showcases my ability to acquire knowledge on <span class="highlight">Customer Understanding, RFM Technique</span></li>
           </ul>
         </div>
       </div>
