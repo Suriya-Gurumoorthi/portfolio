@@ -26,6 +26,19 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Font Awesome for Magnifier Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- GLightbox CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+</script>
+
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -392,86 +405,90 @@
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
           </div><!-- End Portfolio Container -->
 
         </div>
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section>
+    
+<!-- Workshops & Lectures Section -->
+<!-- Workshops Section -->
+<section class="workshops-section">
+  <div class="workshops-container">
+    <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Workshops & Lectures</h2>
+    <p>Empowering Others Through Knowledge Sharing</p>
+  </div><!-- End Section Title -->
+    <!-- 📦 Card 1: Tableau Guest Lecture -->
+    <div class="workshop-card">
+      <a href="assets/img/tableau-1.jpg" class="glightbox" data-gallery="tableau-gallery">
+        <div class="thumbnail-wrapper">
+          <img src="assets/img/tableau-1.jpg" alt="Tableau Workshop">
+          <div class="overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+      </a>
+      <!-- Hidden images for slider -->
+      <a href="assets/img/tableau-2.jpg" class="glightbox d-none" data-gallery="tableau-gallery"></a>
+      
+
+      <div class="workshop-text">
+        <h3>Guest Lecture on Tableau</h3>
+        <p>Presented an insightful session on <strong>Tableau for Data Visualization</strong> at the <strong>UPNM, Malaysia</strong>, highlighting advanced dashboarding techniques and their applications in real-world scenarios, Fostering a deeper understanding of data-driven decision-making.</p>
+      </div>
+    </div>
+
+    <!-- 📦 Card 2: Python Workshop -->
+    <div class="workshop-card">
+      <a href="assets/img/python-3.jpg" class="glightbox" data-gallery="python-gallery">
+        <div class="thumbnail-wrapper">
+          <img src="assets/img/python-3.jpg" alt="Python Workshop">
+          <div class="overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+      </a>
+      <!-- Hidden images for slider -->
+      <a href="assets/img/python-2.jpg" class="glightbox d-none" data-gallery="python-gallery"></a>
+      <a href="assets/img/python-1.jpg" class="glightbox d-none" data-gallery="python-gallery"></a>
+
+      <div class="workshop-text">
+        <h3>8-Day Python Workshop</h3>
+        <p>Led an <strong>8-day workshop</strong> for university students covering Python, data analysis & Statistics which empowered participants to develop practical skills and innovative solutions in a collaborative environment..</p>
+      </div>
+    </div>
+    <div class="workshop-card">
+      <a href="assets/img/AI-1.JPG" class="glightbox" data-gallery="ai-awareness-gallery">
+        <div class="thumbnail-wrapper">
+          <img src="assets/img/AI-1.JPG" alt="AI Awareness Session">
+          <div class="overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+      </a>
+      <!-- Optional extra images for slider -->
+      <a href="assets/img/AI-2.JPG" class="glightbox d-none" data-gallery="ai-awareness-gallery"></a>
+      <a href="assets/img/AI-3.JPG" class="glightbox d-none" data-gallery="ai-awareness-gallery"></a>
+      <a href="assets/img/AI-4.png" class="glightbox d-none" data-gallery="ai-awareness-gallery"></a>
+    
+      <div class="workshop-text">
+        <h3>AI Awareness & Impact Session</h3>
+        <p>Delivered a strategic session at UPNM Malaysia on Generative AI and Chatbots in Higher Education, showcasing how universities can leverage AI to <strong>improve operational efficiency, reduce costs, and enhance data-driven decision-making.</strong></p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+</section><!-- /Workshops & Lectures Section -->
+
+    
+    <!-- /Workshops & Lectures Section -->
+    <!-- /Portfolio Section -->
 
     <!-- Services Section
     <section id="services" class="services section">
@@ -698,7 +715,6 @@
           <div class="col-lg-7">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
                   <input type="text" name="name" id="name-field" class="form-control" required="">
@@ -726,7 +742,6 @@
 
                   <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
           </div><!-- End Contact Form -->
